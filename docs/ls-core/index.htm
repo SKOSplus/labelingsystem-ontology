@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Labeling System Vocabulary</title>
+
+<style type="text/css">
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100italic,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100);
+
+body {
+  padding: 2em 70px 2em 70px;
+  margin: 0;
+  /*font-family: sans-serif;*/
+  font-family: "Roboto",sans-serif;
+  font-weight: 400;
+  color: black;
+  background: white;
+}
+
+a:link    {color: #00c;text-decoration:underline}
+a:visited {color: #00c;text-decoration:underline}
+a:hover   {color: #00c;text-decoration:underline}
+a:active  {color: #00c;text-decoration:underline}
+
+h1, h2, h3, h4, h5, h6 { text-align: left }
+h1, h2, h3 { color: #005A9C; background: white }
+h1 { font: 170% sans-serif }
+h2 { font: 140% sans-serif }
+h3 { font: 120% sans-serif }
+h4 { font: bold 100% sans-serif }
+h5 { font: italic 100% sans-serif }
+h6 { font: small-caps 100% sans-serif }
+
+p {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+dt, dd { margin-top: 5px; margin-bottom: 5px }
+dt { font-weight: bold }
+
+table
+{
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+table th
+{
+  background: #eee;
+}
+
+table td, table th
+{
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: .5em;
+  vertical-align:top;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Labeling System Vocabulary</h1>
+<h2>24 February 2017 - <a href="https://en.wikipedia.org/wiki/Aldgate_tube_station" target="_blank">Aldgate</a> Edition</h2>
+<dt>This version:</dt>
+<dd><a href="http://labeling.link/docs/ls/core/Aldgate/index.htm">http://labeling.link/docs/ls/core/Aldgate/index.htm</a><br/></dd>
+<dt>Latest version:</dt>
+<dd><a href="http://labeling.link/docs/ls/core/index.htm">http://labeling.link/docs/ls/core/index.htm</a></dd>
+<dt>Previous version:</dt>
+<dd>none<br/></dd>
+<dt>Authors:</dt>
+<dd><a href="http://orcid.org/0000-0002-3246-3531">Florian Thiery M.Sc.</a> - Mainz Centre for Digitality in the Humanities and Cultural Studies</dd>
+<br/>
+<hr/>
+
+<h2>Status of this Document</h2>
+<p>This document describes the ontology available for the Labeling System namespace.</p>
+</p>
+<br/>
+<hr/>
+
+<h2>Index of Contents</h2>
+<p>1. <a href="#introduction">Introduction</a></p>
+<p>2. <a href="#vocabulary">Labeling System Vocabulary Overview</a></p>
+<p>&nbsp;&nbsp;&nbsp;I. <a href="#ontology">Ontology</a></p>
+<p>&nbsp;&nbsp;&nbsp;II. <a href="#classes">Classes</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. <a href="#classes_1">Main Classes</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. <a href="#classes_2">Release Type Classes</a></p>
+<p>&nbsp;&nbsp;&nbsp;III. <a href="#properties">Properties</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. <a href="#properties_1">Describing properties</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. <a href="#properties_2">Revision properties</a></p>
+<br/>
+<hr/>
+
+<a name="introduction"></a>
+<h2>Introduction</h2>
+<p>The Labeling System ontology provides a vocabulary of classes and properties used in the Labeling System.</p>
+<p>The Labeling System Ontology is available at <a href="http://labeling.link/docs/ls/datamodel">http://labeling.link/docs/ls/datamodel</a>.</p>
+<br/>
+<hr/>
+
+<a name="vocabulary"></a>
+<h2>Labeling System Vocabulary Overview</h2>
+<p>The following table gives a none-normative overview of the Labeling System vocabulary. This document can be referenced directly, by its own URL
+<a href="http://labeling.link/docs/ls/core/index.htm">http://labeling.link/docs/ls/core/index.htm</a>, or indirectly, by content negotiation from the Labeling System namespace URI
+<a href="http://labeling.link/docs/ls/core#">http://labeling.link/docs/ls/core#</a>. Download the RDF representation on GitHub as
+<a href="https://github.com/mainzed/labelingsystem-ontology/blob/master/ls-core/Aldgate/ls-core.ttl">RDF</a> .</p>
+
+<a name="ontology"></a>
+<h3>Ontology</h3>
+
+<table>
+
+	<tr>
+      <th colspan="2" id="L6"><a href="http://labeling.link/docs/ls/core#">http://labeling.link/docs/ls/core#</a></th>
+    </tr>
+    <tr>
+      <td width='150px'>Label: </td>
+      <td><em>Labeling System Vocabulary</em></td>
+    </tr>
+    <tr>
+      <td>Date: </td>
+      <td><em>24.02.2017</em></td>
+    </tr>
+	<tr>
+      <td>Description: </td>
+      <td><em>An RDF vocabulary for describing the basic structure and content of the Labeling System.</em></td>
+    </tr>
+	<tr>
+      <td>Version: </td>
+      <td><em>Aldgate Edition</em></td>
+    </tr>
+	<tr>
+      <td>Creator: </td>
+      <td><em><a href="http://orcid.org/0000-0002-3246-3531" target="_blank">Florian Thiery M.Sc.</a>, Mainz Centre for Digitality in the Humanities and Cultural Studies</em></td>
+    </tr>
+    <tr>
+      <td>Licence: </td>
+      <td><em><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></em></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<a name="classes"></a>
+<h3>Classes</h3>
+
+<a name="classes_1"></a>
+<h4>I. Main Classes</h4>
+
+<table>
+
+	<tr>
+      <th colspan="2"><a href="#Agent" id="Agent">ls:Agent</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#Agent</code></td>
+    </tr>
+    <tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#MainClasses" target="_blank">Section: Main Classes</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>A Labeling System Agent</em></td>
+    </tr>
+	<tr>
+      <td>SubClassOf: </td>
+      <td><code><a href="http://xmlns.com/foaf/0.1/Agent">http://xmlns.com/foaf/0.1/Agent</a></code><br />
+    </tr>
+
+	<tr>
+      <th colspan="2"><a href="#Label" id="Label">ls:Label</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#Label</code></td>
+    </tr>
+    <tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#MainClasses" target="_blank">Section: Main Classes</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>A Labeling System Label</em></td>
+    </tr>
+	<tr>
+      <td>SubClassOf: </td>
+      <td><code><a href="http://www.w3.org/2004/02/skos/core#Concept">http://www.w3.org/2004/02/skos/core#Concept</a></code><br />
+    </tr>
+
+	<tr>
+      <th colspan="2"><a href="#Revision" id="Revision">ls:Revision</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#Revision</code></td>
+    </tr>
+    <tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#MainClasses" target="_blank">Section: Main Classes</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>A Labeling System Revision</em></td>
+    </tr>
+	<tr>
+      <td>SubClassOf: </td>
+      <td><code><a href="http://www.w3.org/ns/prov#Activity">http://www.w3.org/ns/prov#Activity</a></code><br />
+    </tr>
+
+	<tr>
+      <th colspan="2"><a href="#Vocabulary" id="Vocabulary">ls:Vocabulary</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#Vocabulary</code></td>
+    </tr>
+    <tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#MainClasses" target="_blank">Section: Main Classes</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>A Labeling System Vocabulary</em></td>
+    </tr>
+	<tr>
+      <td>SubClassOf: </td>
+      <td><code><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">http://www.w3.org/2004/02/skos/core#ConceptScheme</a></code><br />
+    </tr>
+
+</table>
+
+<a name="classes_2"></a>
+<h4>II. Release Type Classes</h4>
+
+<table>
+
+	<tr>
+      <th colspan="2"><a href="#ReleaseType" id="ReleaseType">ls:ReleaseType</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#ReleaseType</code></td>
+    </tr>
+    <tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#ReleaseTypeClasses" target="_blank">Section: Release Type Classes</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>release type</em></td>
+    </tr>
+
+	<tr>
+      <th colspan="2"><a href="#Public" id="Public">ls:Public</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#Public</code></td>
+    </tr>
+    <tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#ReleaseTypeClasses" target="_blank">Section: Release Type Classes</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>public item</em></td>
+    </tr>
+	<tr>
+      <td>SubClassOf: </td>
+      <td><code><a href="#ReleaseType">ls:ReleaseType</a></code><br />
+    </tr>
+
+	<tr>
+      <th colspan="2"><a href="#Draft" id="Draft">ls:Draft</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#Draft</code></td>
+    </tr>
+    <tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#ReleaseTypeClasses" target="_blank">Section: Release Type Classes</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>item in draft mode</em></td>
+    </tr>
+	<tr>
+      <td>SubClassOf: </td>
+      <td><code><a href="#ReleaseType">ls:ReleaseType</a></code><br />
+    </tr>
+
+</table>
+
+<a name="properties"></a>
+<h3>Properties</h3>
+
+<a name="properties_1"></a>
+<h4>I. Describing properties</h4>
+
+<table>
+
+	<tr>
+      <th colspan="2"><a href="#hasReleaseType" id="hasReleaseType">ls:hasReleaseType</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#hasReleaseType</code></td>
+    </tr>
+	<tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#DescribingProperties" target="_blank">Section: Describing Properties</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>has release type</em></td>
+    </tr>
+	<tr>
+      <td>Domain:</td>
+	  <td><code><a href="#Vocabulary">ls:Vocabulary</a></code></td>
+    </tr>
+    <tr>
+      <td>Range:</td>
+      <td><code><a href="#ReleaseType">ls:ReleaseType</a></code></td>
+      </td>
+    </tr>
+
+	<tr>
+      <th colspan="2"><a href="#released" id="released">ls:released</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#released</code></td>
+    </tr>
+	<tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#DescribingProperties" target="_blank">Section: Describing Properties</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>was released at</em></td>
+    </tr>
+	<tr>
+      <td>Domain:</td>
+	  <td><code><a href="#Label">ls:Vocabulary</a></code></td>
+    </tr>
+    <tr>
+      <td>Range:</td>
+      <td><code><a href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a></code></td>
+      </td>
+    </tr>
+
+	<tr>
+      <th colspan="2"><a href="#thumbnail" id="thumbnail">ls:thumbnail</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#thumbnail</code></td>
+    </tr>
+	<tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#DescribingProperties" target="_blank">Section: Describing Properties</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>has a preferred skos:prefLabel</em></td>
+    </tr>
+	<tr>
+      <td>Domain:</td>
+	  <td><code><a href="#Label">ls:Label</a></code></td>
+    </tr>
+    <tr>
+      <td>Range:</td>
+      <td><code><a href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a></code></td>
+      </td>
+    </tr>
+
+</table>
+
+<a name="properties_2"></a>
+<h4>II. Revision properties</h4>
+
+<table>
+
+	<tr>
+      <th colspan="2"><a href="#action" id="action">ls:action</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#action</code></td>
+    </tr>
+	<tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#RevisionProperties" target="_blank">Section: Revision Properties</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>has action</em></td>
+    </tr>
+	<tr>
+      <td>Domain:</td>
+	  <td><code><a href="#Revision">ls:Revision</a></code></td>
+    </tr>
+    <tr>
+      <td>Range:</td>
+      <td><code><a href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a></code></td>
+      </td>
+    </tr>
+
+	<tr>
+      <th colspan="2"><a href="#objectType" id="objectType">ls:objectType</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#objectType</code></td>
+    </tr>
+	<tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#RevisionProperties" target="_blank">Section: Revision Properties</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>has object type</em></td>
+    </tr>
+	<tr>
+      <td>Domain:</td>
+	  <td><code><a href="#Revision">ls:Revision</a></code></td>
+    </tr>
+    <tr>
+      <td>Range:</td>
+      <td><code><a href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a></code></td>
+      </td>
+    </tr>
+
+	<tr>
+      <th colspan="2"><a href="#valueBefore" id="valueBefore">ls:valueBefore</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#valueBefore</code></td>
+    </tr>
+	<tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#RevisionProperties" target="_blank">Section: Revision Properties</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>had value before</em></td>
+    </tr>
+	<tr>
+      <td>Domain:</td>
+	  <td><code><a href="#Revision">ls:Revision</a></code></td>
+    </tr>
+    <tr>
+      <td>Range:</td>
+      <td><code><a href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a></code></td>
+      </td>
+    </tr>
+
+	<tr>
+      <th colspan="2"><a href="#valueAfter" id="valueAfter">ls:valueAfter</a> </th>
+    </tr>
+    <tr>
+      <td width='350px'>URI: </td>
+      <td><code>http://labeling.link/docs/ls/core#valueAfter</code></td>
+    </tr>
+	<tr>
+      <td>Definition: </td>
+      <td><code><a href="http://labeling.link/docs/ls/datamodel#RevisionProperties" target="_blank">Section: Revision Properties</a></code></td>
+    </tr>
+    <tr>
+      <td>Label: </td>
+      <td><em>has value after</em></td>
+    </tr>
+	<tr>
+      <td>Domain:</td>
+	  <td><code><a href="#Revision">ls:Revision</a></code></td>
+    </tr>
+    <tr>
+      <td>Range:</td>
+      <td><code><a href="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.w3.org/2000/01/rdf-schema#Literal</a></code></td>
+      </td>
+    </tr>
+
+</table>
+
+<br/>
+<hr/>
+<p>
+	<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+	&nbsp;&nbsp;This work is licensed under a
+	<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+</p>
+
+</body>
+</html>
